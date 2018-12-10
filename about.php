@@ -9,7 +9,7 @@
         <meta name="keywords" content="">
 			
 	<link rel="stylesheet" href="css/index.css" />
-	<link rel="stylesheet" href="css/navigation" />
+	<link rel="stylesheet" href="css/navigation.css" />
         <title>About</title>
         	  
     </head>
@@ -18,10 +18,8 @@
 <br />
   <div class="menu">
 	  <div class="menu1">
-	  <input type="button" value="Virtual Market"/>
          <a href="index.php">Virtual Market</a>
-         <a href="#">Help en info</a>
-         <a href="#">Voorwaarden</a>
+         <a href="terms/terms.php">Voorwaarden</a>
          <a href="#">Veilig handelen</a>
 	  </div>
 	  
