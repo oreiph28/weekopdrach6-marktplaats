@@ -1,0 +1,21 @@
+/*Navigation Menu*/
+
+
+.menu{
+position:absolute;
+height:60px;
+background-color:white;
+left:0px;
+width:100%;
+  }
+  
+ .menu1{
+ padding:18px;
+ margin-left:150px;
+ margin-right:120px;
+ float:left;
+  } 
+  
+ .menu2{
+ padding:18px;
+  }
