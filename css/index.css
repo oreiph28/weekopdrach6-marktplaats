@@ -12,7 +12,7 @@ float:right;
 height:900px;
    }
    
-  .body2{
+.body2{
 padding:20px;
 overflow:scroll;
 position:absolute;
@@ -22,13 +22,11 @@ max-height:500px;
 width:97%;
 float:right;
 height:900px;
- border-style:solid;
-  border-width:8px;
-  border-color:gray;
-   } 
-   
-   
-   
+border-style:solid;
+border-width:8px;
+border-color:gray;
+} 
+    
 .uitgelicht{
 top:185px;
 left:5px;
@@ -40,42 +38,43 @@ height:400px;
 border-width:4px;
 border-style:solid;
 border-color:gray;
- }
+}
 
- #bericht{
- position:relative;
- left:275px;
- top:-30px;
- height:2700px;
- width:1000px;
- background-color:#BCBC8C;
- border-style:solid;
- border-width:4px;
- border-color:gray;
- overflow-y:scroll;
- }
- 
- #logo1{
- position:absolute;
- top:2px;
- left:1055px;
-  }
-  #logo{
-  border-style:solid;
-  border-width:4px;
-  border-color:gray;
-   }
-
- 
- #bericht_l{
- float:left;
- width:430px;
- height:200px;
- background-color:black;
- border-style:solid;
+#bericht{
+position:relative;
+left:275px;
+top:-30px;
+height:2700px;
+width:1000px;
+background-color:#BCBC8C;
+border-style:solid;
 border-width:4px;
 border-color:gray;
-  }
+overflow-y:scroll;
+}
+ 
+#logo1{
+position:absolute;
+top:2px;
+left:1055px;
+}
+
+#logo{
+border-style:solid;
+border-width:4px;
+border-color:gray;
+}
+
+ 
+#bericht_l{
+float:left;
+width:430px;
+height:200px;
+background-color:black;
+border-style:solid;
+border-width:4px;
+border-color:gray;
+}
  
 #footer{
 top:5px;

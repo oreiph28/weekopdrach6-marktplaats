@@ -3,9 +3,9 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="generator" content="Onelio Reiph">
     <meta name="dcterms.created" content="di, 11 dec 2018 09:10:07 GMT">
-    <meta name="description" content="">
+    <meta name="description" content="Virtual Market">
     <meta name="keywords" content="">
 	<link rel="stylesheet" href="login/css/login.css"/>
 	<link rel="stylesheet" href="css/index.css" />
@@ -34,12 +34,13 @@
 	  <input id="btn1" type="button" value="Place Advertisements"/>
 	  </div>
 	
- </div>
+  </div>
 	
 	<br />
 	<br />
 	<br />
 	<br />
+	
 	<!-- =========================================================================
 	================================Search Menu===================================
 	========================================================================== -->
@@ -88,10 +89,10 @@
   <option value="6">50KM</option>
   <option value="7">75KM</option>
 </select>
+  
   <input type="button" value="Search" id="btnZoek"/>
      </div>
-	 
-	 
+ 
 	   <img id="logo1" src="Pictures/logo.jpg" width="250" height="95" alt="logo" title="logo" />
  </div>
 </form>
@@ -101,13 +102,9 @@
   <br />
   <br />
 
-
-
  <div class="body">
    
-   <div class="uitgelicht">
-
-   
+   <div class="uitgelicht"> 
 <a href="#">Antiek en Kunst</a><br />
 <a href="#">Adio, TV, Foto's</a><br />
 <a href="#">Auto's</a><br />
@@ -133,9 +130,7 @@
 </div>
 <br />
 
-	   <div id="bericht">
-	   
-	   
+   <div id="bericht">   
 	   <img id="logo" src="Pictures/logo.jpg" width="535" height="200" alt="logo" title="logo" />
 	   <div id="bericht_l">
 	   <img src="Pictures/advertisements.jpg" width="430" height="200" alt="message" title="message" />
@@ -145,14 +140,9 @@
        <div id="footer"><img src="Pictures/wallpaper.jpg" width="1341" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
     </div>
    
-  
-    
-	
-	
-	
-	<!-- =========================================================================
-	================================LOGINMenu===================================
-	========================================================================== -->
+<!-- ===============================================================
+================================LOGINMenu===========================
+==================================================================== -->
 	
 <!-- =======================User Login============================== -->
 
@@ -210,8 +200,6 @@
 	
   </div>
 </form>
-  
-
 
   </body>
 </html>

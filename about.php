@@ -3,15 +3,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="generator" content="Ornelio Reiph">
     <meta name="dcterms.created" content="ma, 10 dec 2018 08:30:02 GMT">
-    <meta name="description" content="">
+    <meta name="description" content="Virtual Market">
     <meta name="keywords" content="">
 	
 	<link rel="stylesheet" href="login/css/login.css"/>
 	<link rel="stylesheet" href="css/index.css"/>
 	<link rel="stylesheet" href="css/navigation.css"/>
-    <title>Terms</title>
+    <title>About</title>
 
   </head>
   
@@ -41,10 +41,6 @@
 <br />
 
 
-	
-	
-	
-	
 <div class="body2" style="background-color:white;">
 <h1>About</h1>
 <p id="text1">
@@ -66,12 +62,9 @@
    
 </div>
 
-
-
-
-	<!-- =========================================================================
-	================================LOGINMenu===================================
-	========================================================================== -->
+<!-- ===================================================================
+================================LOGINMenu===============================
+==================================================================== -->
 	
 <!-- =======================User Login============================== -->
 
@@ -128,7 +121,6 @@
 	
   </div>
 </form>
-
 
   </body>
 </html>

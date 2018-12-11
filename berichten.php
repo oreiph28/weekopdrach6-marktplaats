@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="css/navigation.css" />
 	<link rel="stylesheet" href="css/search.css" />
     
-	<title>Virtual Market</title>
+	<title>Messages</title>
   </head>
   
   <body>
@@ -20,7 +20,7 @@
   <div class="menu">
 
 	   <div class="menu1">
-             <a href="index.php">VirtualMarket</a>
+         <a href="index.php">VirtualMarket</a>
 		 <a href="berichten.php">Messages</a>
          <a href="contact.php">Contact</a> 
 	  </div>
@@ -40,6 +40,7 @@
 	<br />
 	<br />
 	<br />
+	
 	<!-- =========================================================================
 	================================Search Menu===================================
 	========================================================================== -->
@@ -101,13 +102,9 @@
   <br />
   <br />
 
-
-
  <div class="body">
    
    <div class="uitgelicht">
-
-   
 <a href="#">Antiek en Kunst</a><br />
 <a href="#">Adio, TV, Foto's</a><br />
 <a href="#">Auto's</a><br />
@@ -144,12 +141,8 @@
 	   
        <div id="footer"><img src="Pictures/wallpaper.jpg" width="1341" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
   </div>
-   
+
   
-    
-	
-	
-	
 	<!-- =========================================================================
 	================================LOGINMenu===================================
 	========================================================================== -->
@@ -209,8 +202,6 @@
 	
   </div>
 </form>
-  
-
 
   </body>
 </html>
