@@ -1,0 +1,65 @@
+body {
+background-color:#D65C8F;
+width:97%;
+height:650px;
+  }
+
+  
+.header{
+position:relative;
+width:97.5%;
+height:65px;
+background-color:#DEDEFF;
+border-style:solid;
+border-width:4px;
+border-color:gray;
+padding:17px;
+ }
+
+.searchmenu{
+padding-left:10px;
+position:absolute;
+background-color:gray;
+text-align:left;
+margin-left:50px;
+height:49px;
+max-width:950px;
+width:98%;
+} 
+ 
+#searchInput{
+background-color:white;
+width:300px;
+height:35px;
+} 
+
+.searchSelect{
+padding-left:10px;
+margin-left:1px;
+height:36px;
+width:200px;
+ }
+
+#PosctcodeInput{
+padding-left:10px;
+margin-left:20px;
+width:150px;
+height:35px;
+ }
+ 
+.afstand{
+padding-left:10px;
+margin-left:0px;
+width:155px;
+height:35px;
+ }
+
+#btnZoek{
+height:35px;
+width:100px; 
+ }
+ 
+ form.search{
+ position:relative;
+ left:10px;
+  }

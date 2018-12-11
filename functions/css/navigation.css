@@ -1,0 +1,41 @@
+/*Navigation Menu*/
+
+.menu a{
+color:black;
+font-size:larger;
+border-style:solid;
+border-width:4px;
+border-color:gray;
+border-radius:25px; 
+background-color:#FF71C7;
+padding:8px;
+ }
+ 
+.menu{
+position:absolute;
+height:60px;
+background-color:#DEDEFF;
+border-style:solid;
+border-width:4px;
+border-color:gray;
+left:10px;
+width:98%;
+  }
+  
+ .menu1{
+ padding:18px;
+ margin-left:250px;
+ margin-right:120px;
+ float:left;
+  } 
+  
+ .menu2{
+ padding:18px;
+  }
+  
+ #btn1{
+ position:absolute;
+ height:35px;
+top:10px;
+left:40px;
+  }
