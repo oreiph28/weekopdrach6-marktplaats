@@ -19,16 +19,18 @@
  
   <div class="menu">
 
-	  <div class="menu1">
-         <a href="index.php">VirtualMarket</a>
+	   <div class="menu1">
+             <a href="index.php">VirtualMarket</a>
 		 <a href="berichten.php">Messages</a>
          <a href="contact.php">Contact</a> 
 	  </div>
 	  
 	  <div class="menu2">
-	     <a href="terms/terms.php">Terms</a>	 
+	     <a href="terms/terms.php">Terms</a>	
 		 <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id02').style.display='block'">Admin_Login</a>
          <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id01').style.display='block'">User_Login</a>
+		 <a href="about.php">About</a>
+		 <a href="login/registration.php">Register</a>
 	  <input id="btn1" type="button" value="Place Advertisements"/>
 	  </div>
 	
@@ -136,12 +138,12 @@
 	   
 	   <img id="logo" src="Pictures/logo.jpg" width="535" height="200" alt="logo" title="logo" />
 	   <div id="bericht_l">
-	   <img src="Pictures/advertisements.jpg" width="430" height="200" alt="message" title="message" />
+	<img src="Pictures/pic3.jpg" width="430" height="200" alt="message" title="message" />
 	   </div>
 	   </div>
-   
+	   
        <div id="footer"><img src="Pictures/wallpaper.jpg" width="1341" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
-    </div>
+  </div>
    
   
     
@@ -156,7 +158,7 @@
 
 <form id="id01"  class="login"  action="login/user_login.php" method="post">
       <div class="imgcontainer">
-	       <img src="images/login.jpg" alt="login" class="login">
+	      	   <img src="Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
 	  </div>
 	  
 	  <div class="container">
@@ -184,7 +186,7 @@
 
 <form id="id02"  class="login"  action="login/login.php" method="post">
       <div class="imgcontainer">
-	       <img src="images/login.jpg" alt="login" class="login">
+	      	   <img src="Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
 	  </div>
 	  
 	  <div class="container">

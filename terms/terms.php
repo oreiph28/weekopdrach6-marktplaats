@@ -10,28 +10,26 @@
 	
 	<link rel="stylesheet" href="../login/css/login.css"/>
 	<link rel="stylesheet" href="../css/index.css"/>
-	<link rel="stylesheet" href="../css/navigation"/>
+	<link rel="stylesheet" href="../css/navigation.css"/>
     <title>Terms</title>
     
-
   </head>
-  <body>
+  <body style="background-color:#FD70C5;">
  
   <div class="menu">
-	  <div class="menu1">
-	  <input type="button" value="Virtual Market">
-         <a href="../index.php">Virtual Market</a>
-         <a href="#">Help en info</a>
-         <a href="../terms/terms.php">Voorwaarden</a>
-         <a href="#">Veilig handelen</a>
+	   <div class="menu1">
+            <a href="../index.php">VirtualMarket</a>
+		 <a href="../berichten.php">Messages</a>
+         <a href="../contact.php">Contact</a> 
 	  </div>
 	  
 	  <div class="menu2">
-	     <a href="../berichten.php">Berichten</a>
-	     <a href="#">Meldingen</a>
+	     <a href="../terms/terms.php">Terms</a>	
 		 <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id02').style.display='block'">Admin_Login</a>
          <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id01').style.display='block'">User_Login</a>
-	  <input type="button" value="Plaats advertentie"/>
+		 <a href="../about.php">About</a>
+		 <a href="../login/registration.php">Register</a>
+	  <input id="btn1" type="button" value="Place Advertisements"/>
 	  </div>
 	
  </div>
@@ -46,18 +44,18 @@
 	
 	
 	
-<div class="body">
+<div class="body2" style="background-color:white;">
 <h1>Terms and Conditions ("Terms")</h1>
 
 
 <p>Last updated: December 03, 2018</p>
 
 
-<p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the www.nibblebits-technology.tk website (the "Service") operated by nibblebits technology ("us", "we", or "our").</p>
+<p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the 'Virtual Market' website (the "Service") operated by 'Virtual Market' ("us", "we", or "our").</p>
 
 <p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</p>
 
-<p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. This Terms and Conditions agreement  for nibblebits technology is managed by <a href="https://www.hackermaster.tk">HackerMaster</a>.</p>
+<p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. This Terms and Conditions agreement  for 'Virtual Market' is managed by <a href="https://www.hackermaster.tk">HackerMaster</a>.</p>
 
 
 <h2>Accounts</h2>
@@ -71,9 +69,9 @@
 
 <h2>Links To Other Web Sites</h2>
 
-<p>Our Service may contain links to third-party web sites or services that are not owned or controlled by nibblebits technology.</p>
+<p>Our Service may contain links to third-party web sites or services that are not owned or controlled by 'Virtual Market'.</p>
 
-<p>nibblebits technology has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that nibblebits technology shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
+<p>'Virtual Market' has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that 'Virtual Market' shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
 
 <p>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p>
 
@@ -122,7 +120,7 @@
 
 <form id="id01"  class="login"  action="login/user_login.php" method="post">
       <div class="imgcontainer">
-	       <img src="images/login.jpg" alt="login" class="login">
+	       	   <img src="../Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
 	  </div>
 	  
 	  <div class="container">
@@ -150,7 +148,7 @@
 
 <form id="id02"  class="login"  action="login/login.php" method="post">
       <div class="imgcontainer">
-	       <img src="images/login.jpg" alt="login" class="login">
+	       	   <img src="../Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
 	  </div>
 	  
 	  <div class="container">

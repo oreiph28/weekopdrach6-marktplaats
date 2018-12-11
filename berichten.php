@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
+    <meta charset="utf-8">
+    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="dcterms.created" content="di, 11 dec 2018 09:10:07 GMT">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
 	<link rel="stylesheet" href="login/css/login.css"/>
 	<link rel="stylesheet" href="css/index.css" />
 	<link rel="stylesheet" href="css/navigation.css" />
@@ -12,18 +18,20 @@
   <body>
  
   <div class="menu">
-  
-	  <div class="menu1">
-         <a href="index.php">Virtual Market</a>
-         <a href="terms/terms.php">Voorwaarden</a>
+
+	   <div class="menu1">
+             <a href="index.php">VirtualMarket</a>
+		 <a href="berichten.php">Messages</a>
+         <a href="contact.php">Contact</a> 
 	  </div>
 	  
 	  <div class="menu2">
-	     <a href="berichten.php">Berichten</a>
-	     <a href="#">Meldingen</a>
+	     <a href="terms/terms.php">Terms</a>	
 		 <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id02').style.display='block'">Admin_Login</a>
          <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id01').style.display='block'">User_Login</a>
-	  <input type="button" value="Plaats advertentie"/>
+		 <a href="about.php">About</a>
+		 <a href="login/registration.php">Register</a>
+	  <input id="btn1" type="button" value="Place Advertisements"/>
 	  </div>
 	
  </div>
@@ -35,13 +43,14 @@
 	<!-- =========================================================================
 	================================Search Menu===================================
 	========================================================================== -->
+<form class="search" action="search_bar.php">
+
 <div class="header">
-   
  <div class="searchmenu">
-       <input id="searchInput" type="text" name="searchInput" placeholder="Search" required>
+      <input id="searchInput" type="text" name="searchInput" placeholder="Search" required>
 
  <select class="searchSelect" name="searchSelect">
-   <option selected value="1">Alle groepen</option>
+   <option selected value="1">All groups</option>
    <option value="2">Antiek en Kunst</option>
    <option value="2">Adio, TV, Foto's</option>
    <option value="2">Auto's</option>
@@ -67,10 +76,10 @@
    <option value="13">Muziek en Instrumenten</option>
 </select>
 
-<input id="PosctcodeInput" type="text" name="searchInput" placeholder="Posctode" required>
+<input id="PosctcodeInput" type="text" name="searchInput" placeholder="Postal Code" required>
 
 <select name="afstand" class="afstand">
-  <option selected value="0">Alle Afstanden</option>
+  <option selected value="0">All distances</option>
   <option value="1">3KM</option>
   <option value="2">5KM</option>
   <option value="3">10KM</option>
@@ -79,10 +88,13 @@
   <option value="6">50KM</option>
   <option value="7">75KM</option>
 </select>
-  <input type="button" value="ZOEK" id="btnZoek"/>
+  <input type="button" value="Search" id="btnZoek"/>
      </div>
+	 
+	 
+	   <img id="logo1" src="Pictures/logo.jpg" width="250" height="95" alt="logo" title="logo" />
  </div>
-
+</form>
   <br />
   <br />
   <br />
@@ -92,8 +104,10 @@
 
 
  <div class="body">
-  
+   
    <div class="uitgelicht">
+
+   
 <a href="#">Antiek en Kunst</a><br />
 <a href="#">Adio, TV, Foto's</a><br />
 <a href="#">Auto's</a><br />
@@ -116,18 +130,21 @@
 <a href="#">Kleding Heren</a><br />
 <a href="#">Motoren</a><br />
 <a href="#">Muziek en Instrumenten</a><br />
-    </div>
- <br />
- 
- 
-   <div class="footer">
-  jgkjhjjkljlk
-  </div>
- 
+</div>
+<br />
 
-
+	   <div id="bericht">
+	   
+	   
+	   <img id="logo" src="Pictures/logo.jpg" width="535" height="200" alt="logo" title="logo" />
+	   <div id="bericht_l">
+	<img src="Pictures/message.jpg" width="430" height="200" alt="message" title="message" />
+	   </div>
+	   </div>
+	   
+       <div id="footer"><img src="Pictures/wallpaper.jpg" width="1341" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
   </div>
-  
+   
   
     
 	
@@ -141,7 +158,7 @@
 
 <form id="id01"  class="login"  action="login/user_login.php" method="post">
       <div class="imgcontainer">
-	       <img src="images/login.jpg" alt="login" class="login">
+	      	   <img src="Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
 	  </div>
 	  
 	  <div class="container">
@@ -169,7 +186,7 @@
 
 <form id="id02"  class="login"  action="login/login.php" method="post">
       <div class="imgcontainer">
-	       <img src="images/login.jpg" alt="login" class="login">
+	       	   <img src="Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
 	  </div>
 	  
 	  <div class="container">
