@@ -28,13 +28,14 @@ $result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 $count = mysqli_num_rows($result);
 
 if ($count == 1){
-//echo "loggedin";
-              require('../users/mijnAdvertentie.php');
+//require('user.php');
+                 echo "logged in";
                  }
 	else
 	    {
-		//echo "not logged in";
-	  require('../index.php');
+		 echo "not logged in";
+		
+	    // require('../functions/index.php');
 	    }
 ?>
 

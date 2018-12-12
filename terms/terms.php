@@ -25,11 +25,11 @@
 	  
 	  <div class="menu2">
 	     <a href="../terms/terms.php">Terms</a>	
-		 <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id02').style.display='block'">Admin_Login</a>
-         <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id01').style.display='block'">User_Login</a>
+         <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id01').style.display='block'">My ads</a>
 		 <a href="../about.php">About</a>
 		 <a href="../login/registration.php">Register</a>
-	  <input id="btn1" type="button" value="Place Advertisements"/>
+	 
+
 	  </div>
 	
  </div>
@@ -110,7 +110,7 @@
 	
 <!-- =======================User Login============================== -->
 
-<form id="id01"  class="login"  action="login/user_login.php" method="post">
+<form id="id01"  class="login"  action="../login/user_login.php" method="post">
       <div class="imgcontainer">
 	       	   <img src="../Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
 	  </div>
@@ -136,33 +136,6 @@
   </div>
 </form>
 
-<!-- =======================Admin Login============================== -->
-
-<form id="id02"  class="login"  action="login/login.php" method="post">
-      <div class="imgcontainer">
-	       	   <img src="../Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
-	  </div>
-	  
-	  <div class="container">
-	       <label ><b>Username</b></label>
-		   <input type="text" placeholder="Enter Username" name="uname" required>
-		   
-		   <label> <b>Password</b></label>
-	       <input type="password" placeholder="Enter Password" name="psw" required>
-		   
-		   <button class="button_login" type="submit">Login</button>
-		   
-		   <label>
-		       <input type="checkbox" checked="checked" name="remember">Remember
-		   </label>	   
-	  </div>
-
-	  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-	
-  </div>
-</form>
 
   </body>
 </html>

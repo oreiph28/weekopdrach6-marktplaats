@@ -3,16 +3,16 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="generator" content="Onelio Reiph">
     <meta name="dcterms.created" content="di, 11 dec 2018 09:10:07 GMT">
-    <meta name="description" content="">
+    <meta name="description" content="Virtual Market">
     <meta name="keywords" content="">
-	<link rel="stylesheet" href="css/registration.css">
 	<link rel="stylesheet" href="../login/css/login.css"/>
+	<link rel="stylesheet" href="../css/index.css" />
 	<link rel="stylesheet" href="../css/navigation.css" />
 	<link rel="stylesheet" href="../css/search.css" />
-    <link rel="stylesheet" href="../css/index.css" />
-	<title>Virtual Market</title>
+    
+	<title>Mijn Advertentie</title>
   </head>
   
   <body>
@@ -27,16 +27,17 @@
 	  
 	  <div class="menu2">
 	     <a href="../terms/terms.php">Terms</a>	 
-         <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id01').style.display='block'">My ads</a>
 		 <a href="../about.php">About</a>
+	  <input id="btn1" type="button" value="Place Advertisements"/>
 	  </div>
 	
- </div>
+  </div>
 	
 	<br />
 	<br />
 	<br />
 	<br />
+	
 	<!-- =========================================================================
 	================================Search Menu===================================
 	========================================================================== -->
@@ -85,10 +86,10 @@
   <option value="6">50KM</option>
   <option value="7">75KM</option>
 </select>
+  
   <input type="button" value="Search" id="btnZoek"/>
      </div>
-	 
-	 
+ 
 	   <img id="logo1" src="../Pictures/logo.jpg" width="250" height="95" alt="logo" title="logo" />
  </div>
 </form>
@@ -98,82 +99,44 @@
   <br />
   <br />
 
+ <div class="body">
+   
+   <div class="uitgelicht"> 
+<a href="#">Antiek en Kunst</a><br />
+<a href="#">Adio, TV, Foto's</a><br />
+<a href="#">Auto's</a><br />
+<a href="#">auto-onderdelen</a><br />
+<a href="#">auto-diversen</a><br />
+<a href="#">Boeken</a><br />
+<a href="#">Caravans en Kamperen</a><br />
+<a href="#">Cd's en Dvd'S</a><br />
+<a href="#">Computers en Software</a><br />
+<a href="#">Contacten en Berichten</a><br />
+<a href="#">Diensten en Vakmensen</a><br />
+<a href="#">Dieren en Toebehoren</a><br />
+<a href="#">Doe-Het-Zelfen Verbouw</a><br />
+<a href="#">Fietsen en Brommers</a><br />
+<a href="#">Huis en Inrichting</a><br />
+<a href="#">Antiek</a><br />
+<a href="#">Huizen en Kamers</a><br />
+<a href="#">Kinderen en Baby's</a><br />
+<a href="#">Kleding Dames</a><br />
+<a href="#">Kleding Heren</a><br />
+<a href="#">Motoren</a><br />
+<a href="#">Muziek en Instrumenten</a><br />
+</div>
+<br />
 
-<!--  ==========================registration form ============= -->
-<form action="../functions/register_page.php" method="post">
-  <div class="container">
-        <h1>Register</h1>
-            <p>Please fill in this form to create an account.</p>
-             <hr>
-
-    <label ><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="username" required>
-
-    <label ><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label ><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <label ><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-    <hr>
-    <p>By creating an account you agree to our <a href="../terms/terms.php">Terms & Privacy</a>.</p>
-
-    <button type="submit" class="registerbtn">Register</button>
-    </div>
-  
- <div class="container signin">
-       <p>Already have an account? <a href="javascript:void(0);" class="icon" onclick="document.getElementById('id01').style.display='block'">Login</a>.</p>
-
-  </div>
-</form>
-
-
-
-
-	 
-	  
+   <div id="bericht">   
+	   <img id="logo" src="../Pictures/logo.jpg" width="535" height="200" alt="logo" title="logo" />
+	   <div id="bericht_l">
+	   <img src="../Pictures/advertisements.jpg" width="430" height="200" alt="message" title="message" />
+	   </div>
+	   </div>
    
        <div id="footer"><img src="../Pictures/wallpaper.jpg" width="1341" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
-
+    </div>
    
-  
-    
-	
-	
-	
-	<!-- =========================================================================
-	================================LOGINMenu===================================
-	========================================================================== -->
-	
-<!-- =======================User Login============================== -->
-
-<form id="id01"  class="login"  action="../login/user_login.php" method="post">
-      <div class="imgcontainer">
-	       	   <img src="../Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
-	  </div>
-	  
-	  <div class="container">
-	       <label ><b>Username</b></label>
-		   <input type="text" placeholder="Enter Username" name="uname" required>
-		   
-		   <label ><b>Password</b></label>
-	       <input type="password" placeholder="Enter Password" name="psw" required>
-		   
-		   <button class="button_login" type="submit">Login</button>
-		   
-		   <label>
-		       <input type="checkbox" checked="checked" name="remember">Remember
-		   </label>	   
-	  </div>
-
-	  <div class="container" style="background-color:#f1f1f1">
-    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-	
-  </div>
-</form>
 
 
   </body>
