@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="../css/index.css" />
 	<link rel="stylesheet" href="../css/navigation.css" />
 	<link rel="stylesheet" href="../css/search.css" />
+	<link rel="stylesheet" href="../users/css/mijnAdevertenties.css" />
     
 	<title>Mijn Advertentie</title>
   </head>
@@ -90,7 +91,7 @@
   <input type="button" value="Search" id="btnZoek"/>
      </div>
  
-	   <img id="logo1" src="../Pictures/logo.jpg" width="250" height="95" alt="logo" title="logo" />
+	   <img id="logo1" src="../Pictures/logo.jpg" width="250" height="95" alt="logo" title="Virtual Market" />
  </div>
 </form>
   <br />
@@ -128,16 +129,87 @@
 <br />
 
    <div id="bericht">   
-	   <img id="logo" src="../Pictures/logo.jpg" width="535" height="200" alt="logo" title="logo" />
+	   <img id="logo" src="../Pictures/logo.jpg" width="535" height="200" alt="logo" title="Virtual Market" />
 	   <div id="bericht_l">
-	   <img src="../Pictures/advertisements.jpg" width="430" height="200" alt="message" title="message" />
+	   <img src="../Pictures/user.jpg" width="430" height="200" alt="message" title="Virtual Market" />
+	   <h1 id="usern">users</h1>
 	   </div>
+	   
+<!--   =================================================================
+=============================BLOG INPUT FORM============================
+==================================================================== -->
+
+    <form class="blog" id="blog_news" name="Blogform" method="post" action="../functions/placeAd.php" enctype="multipart/form-data"> 
+             <table  class="table">
+	               <tr>
+					        <td>
+					        <input type="hidden" name="size" value="1000000">
+							</td>
+  	               </tr>
+					 
+				   <tr>
+				             <td>
+							 <label>Username</label>
+							 </td>
+				             <td>
+							 <input type="text" name="name" maxlength="50" size="31" placeholder="Enter Name" required/>
+							 </td>
+				   </tr>
+	
+	               <tr>
+				             <td>
+							 <label>Group</label>
+							 </td>
+				             <td>
+							 <input type="text" name="title" maxlength="50" size="31" placeholder="Enter Title" required/>
+							 </td>
+				   </tr>
+	          
+			       <tr>
+				             <td>
+							 <label>Email</label>
+							 </td>
+				             <td>
+							 <input type="text" name="email" maxlength="50" size="31" placeholder="Enter email" required/>
+							 </td>
+				   </tr>
+	               
+				   <tr>
+				             <td id="btn">
+							 <label>Ad</label>
+							 </td>
+				           
+						     <td id="blog_b">
+							 <textarea id="text" cols="28" rows="9" name="image_text" placeholder="Say something about this image..."></textarea>
+  	                         </td>
+				   </tr>		   
+	         </table>
+			 
+			  <input id="submit" type="submit" />
+			  <br/>
+		      <input id="file" type="file" name="image"> 
+  </form>
+	   
 	   </div>
+   
    
        <div id="footer"><img src="../Pictures/wallpaper.jpg" width="1341" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
     </div>
    
 
+	
+	<!-- =========================================================================
+	================================Sripts========================================
+	========================================================================== -->
+	
+<?php
+ $name = $_POST["uname"];
+?>
+	
+<script type="text/javascript">
+var result="<?php echo $name;?>";
+document.getElementById("usern").innerHTML = result;
+</script>
 
   </body>
 </html>

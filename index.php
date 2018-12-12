@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="css/index.css" />
 	<link rel="stylesheet" href="css/navigation.css" />
 	<link rel="stylesheet" href="css/search.css" />
-    
+    <link rel="stylesheet" href="../Virtual_Market/users/css/mijnAdevertenties.css" />
 	<title>Virtual Market</title>
   </head>
   
@@ -92,7 +92,7 @@
   <input type="button" value="Search" id="btnZoek"/>
      </div>
  
-	   <img id="logo1" src="Pictures/logo.jpg" width="250" height="95" alt="logo" title="logo" />
+	   <img id="logo1" src="Pictures/logo.jpg" width="250" height="95" alt="logo" title="Virtual Market" />
  </div>
 </form>
   <br />
@@ -130,13 +130,51 @@
 <br />
 
    <div id="bericht">   
-	   <img id="logo" src="Pictures/logo.jpg" width="535" height="200" alt="logo" title="logo" />
+	   <img id="logo" src="Pictures/logo.jpg" width="535" height="200" alt="logo" title="Virtual Market" />
 	   <div id="bericht_l">
-	   <img src="Pictures/advertisements.jpg" width="430" height="200" alt="message" title="message" />
+	   <img src="Pictures/advertisements.jpg" width="430" height="200" alt="message" title="Virtual Market" />
 	   </div>
+	  
+<!-- ===========================================================================================
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  ============================================================================================= -->
+
+   <?php	
+     $servername = "localhost";
+     $username = "oreiph";
+     $password = "1771128903";
+     $dbname = "virtual_market";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+   if($conn->connect_errno){
+                            echo "Connection failed " . $conn->connect_error; 
+                            exit();
+                           }
+
+$sqlCommand ="SELECT * FROM advertentie ORDER BY ID DESC LIMIT 10";
+$sqlUitvoer	= mysqli_query($conn,$sqlCommand);
+
+if ($sqlUitvoer->num_rows>0){
+         while ($row = mysqli_fetch_array($sqlUitvoer)) {
+        echo "<p id='ads'>"."<img id='img1' src='images/".$row['file']."' >";
+		echo "Advertisement #:  "."</b>".$row['id']."<br>";
+		echo "<b>"."Advertiser:  "."</b>".$row['username']."<br>";
+		echo "<b>"."Group:  "."</b>".$row['groep']."<br>";
+		echo "<b>"."Ad:  "."</b>".$row['advertentie']."<br>";
+		echo $row['file']."<br>";
+		echo "<b>"."Group:  "."</b>".$row['groep']."<br>";
+		echo "_________________________"."<br>"."<br>"."<br>"."</p>";
+     
+     
+    }}
+?>  
+	   
+	   
+	   
 	   </div>
-   
-       <div id="footer"><img src="Pictures/wallpaper.jpg" width="1341" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
+ 
+	   <div id="footer"><img src="Pictures/wallpaper.jpg" width="1341" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
+
     </div>
    
 <!-- ===============================================================
@@ -148,7 +186,7 @@
 <form id="id01"  class="login"  action="login/user_login.php" method="post">
       <div class="imgcontainer">
 	      
-		   <img src="Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
+		   <img src="Pictures/login.jpg" width="429" height="321" alt="login" title="Virtual Market" />
 	  </div>
 	  
 	  <div class="container">
@@ -171,6 +209,8 @@
 	
   </div>
 </form>
+
+
 
 
   </body>

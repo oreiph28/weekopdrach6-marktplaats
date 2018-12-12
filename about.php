@@ -57,7 +57,7 @@
    Your Administrator. <br />
 
    </p>
-   <img src="../../images/kweek.jpg" width="512" height="384" alt="administrator" title="administrator" />
+   <img src="../../images/kweek.jpg" width="512" height="384" alt="administrator" title="Virtual Market" />
    
 </div>
 
@@ -69,7 +69,7 @@
 
 <form id="id01"  class="login"  action="login/user_login.php" method="post">
       <div class="imgcontainer">
-	       	   <img src="Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
+	       	   <img src="Pictures/login.jpg" width="429" height="321" alt="login" title="Virtual Market" />
 	  </div>
 	  
 	  <div class="container">

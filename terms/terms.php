@@ -112,7 +112,7 @@
 
 <form id="id01"  class="login"  action="../login/user_login.php" method="post">
       <div class="imgcontainer">
-	       	   <img src="../Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
+	       	   <img src="../Pictures/login.jpg" width="429" height="321" alt="login" title="Virtual Market" />
 	  </div>
 	  
 	  <div class="container">

@@ -92,7 +92,7 @@
      </div>
 	 
 	 
-	   <img id="logo1" src="Pictures/logo.jpg" width="250" height="95" alt="logo" title="logo" />
+	   <img id="logo1" src="Pictures/logo.jpg" width="250" height="95" alt="logo" title="Virtual Market" />
  </div>
 </form>
   <br />
@@ -132,9 +132,9 @@
 	   <div id="bericht">
 	   
 	   
-	   <img id="logo" src="Pictures/logo.jpg" width="535" height="200" alt="logo" title="logo" />
+	   <img id="logo" src="Pictures/logo.jpg" width="535" height="200" alt="logo" title="Virtual Market" />
 	   <div id="bericht_l">
-	<img src="Pictures/message.jpg" width="430" height="200" alt="message" title="message" />
+	<img src="Pictures/message.jpg" width="430" height="200" alt="message" title="Virtual Market" />
 	   </div>
 	   </div>
 	   
@@ -150,7 +150,7 @@
 
 <form id="id01"  class="login"  action="login/user_login.php" method="post">
       <div class="imgcontainer">
-	      	   <img src="Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
+	      	   <img src="Pictures/login.jpg" width="429" height="321" alt="login" title="Virtual Market" />
 	  </div>
 	  
 	  <div class="container">

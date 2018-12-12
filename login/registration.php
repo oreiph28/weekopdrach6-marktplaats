@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <meta name="generator" content="CoffeeCup HTML Editor (www.coffeecup.com)">
+    <meta name="generator" content="Ornelio Reiph">
     <meta name="dcterms.created" content="di, 11 dec 2018 09:10:07 GMT">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="../css/navigation.css" />
 	<link rel="stylesheet" href="../css/search.css" />
     <link rel="stylesheet" href="../css/index.css" />
-	<title>Virtual Market</title>
+	<title>Registration</title>
   </head>
   
   <body>
@@ -89,7 +89,7 @@
      </div>
 	 
 	 
-	   <img id="logo1" src="../Pictures/logo.jpg" width="250" height="95" alt="logo" title="logo" />
+	   <img id="logo1" src="../Pictures/logo.jpg" width="250" height="95" alt="logo" title="Virtual Market" />
  </div>
 </form>
   <br />
@@ -151,7 +151,7 @@
 
 <form id="id01"  class="login"  action="../login/user_login.php" method="post">
       <div class="imgcontainer">
-	       	   <img src="../Pictures/login.jpg" width="429" height="321" alt="login" title="login" />
+	       	   <img src="../Pictures/login.jpg" width="429" height="321" alt="login" title="Virtual Market" />
 	  </div>
 	  
 	  <div class="container">
