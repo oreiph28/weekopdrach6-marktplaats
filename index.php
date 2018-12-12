@@ -156,17 +156,18 @@ $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
 if ($sqlUitvoer->num_rows>0){
          while ($row = mysqli_fetch_array($sqlUitvoer)) {
-        echo "<p id='ads'>"."<img id='img1' src='images/".$row['file']."' >";
-		echo "Advertisement #:  "."</b>".$row['id']."<br>";
+		      
+		echo "<p id='ads'>"."<img id='img1' src='images/".$row['file']."' width='200' height='130'>";
+		echo "<br>"."<br>"."<b>"."Advertisement #:  "."</b>".$row['id']."<br>";
 		echo "<b>"."Advertiser:  "."</b>".$row['username']."<br>";
 		echo "<b>"."Group:  "."</b>".$row['groep']."<br>";
-		echo "<b>"."Ad:  "."</b>".$row['advertentie']."<br>";
-		echo $row['file']."<br>";
-		echo "<b>"."Group:  "."</b>".$row['groep']."<br>";
-		echo "_________________________"."<br>"."<br>"."<br>"."</p>";
+		echo "_________________________"."<br>";
+		echo "<b>"."Discription:  "."</b>"."<br>".$row['advertentie']."<br>"."</p>";
+		
      
-     
+    
     }}
+	mysqli_close($conn);
 ?>  
 	   
 	   

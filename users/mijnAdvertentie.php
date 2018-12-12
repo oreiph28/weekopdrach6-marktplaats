@@ -190,6 +190,46 @@
 		      <input id="file" type="file" name="image"> 
   </form>
 	   
+	   
+	   
+	     
+<!-- ===========================================================================================
+  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  ============================================================================================= -->
+
+<?php	
+     $servername = "localhost";
+     $username = "oreiph";
+     $password = "1771128903";
+     $dbname = "virtual_market";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+   if($conn->connect_errno){
+                            echo "Connection failed " . $conn->connect_error; 
+                            exit();
+                           }
+
+$sqlCommand ="SELECT * FROM advertentie ORDER BY ID DESC LIMIT 10";
+$sqlUitvoer	= mysqli_query($conn,$sqlCommand);
+
+if ($sqlUitvoer->num_rows>0){
+         while ($row = mysqli_fetch_array($sqlUitvoer)) {
+		      
+		echo "<p id='ads'>"."<img src='images/".$row['file']."' width='200' height='130'>";
+		echo "<br>"."<br>"."Advertisement #:  "."</b>".$row['id']."<br>";
+		echo "<b>"."Advertiser:  "."</b>".$row['username']."<br>";
+		echo "<b>"."Group:  "."</b>".$row['groep']."<br>";
+		echo "<b>"."Ad:  "."</b>".$row['advertentie']."<br>";
+		echo $row['file']."<br>";
+		echo "_________________________"."<br>"."</p>";
+     
+     
+    }}
+	mysqli_close($conn);
+?>  
+	   
+	   
+	   
 	   </div>
    
    
