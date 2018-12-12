@@ -151,16 +151,17 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
                             exit();
                            }
 
-$sqlCommand ="SELECT * FROM advertentie ORDER BY ID DESC LIMIT 10";
+$sqlCommand ="SELECT * FROM advertentie ORDER BY ID DESC LIMIT 100";
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
 if ($sqlUitvoer->num_rows>0){
          while ($row = mysqli_fetch_array($sqlUitvoer)) {
 		      
-		echo "<p id='ads'>"."<img id='img1' src='images/".$row['file']."' width='200' height='130'>";
+		echo "<p id='ads'>"."<img id='img1' src='images/".$row['file']."' width='200' height='130' onclick='myFunction()'>";
 		echo "<br>"."<br>"."<b>"."Advertisement #:  "."</b>".$row['id']."<br>";
 		echo "<b>"."Advertiser:  "."</b>".$row['username']."<br>";
 		echo "<b>"."Group:  "."</b>".$row['groep']."<br>";
+		echo "<a href='https://www.google.com'>google</a>"."<br>";
 		echo "_________________________"."<br>";
 		echo "<b>"."Discription:  "."</b>"."<br>".$row['advertentie']."<br>"."</p>";
 		
@@ -170,11 +171,14 @@ if ($sqlUitvoer->num_rows>0){
 	mysqli_close($conn);
 ?>  
 	   
-	   
-	   
-	   </div>
+	  <script>
+function myFunction() {
+ document.write('<img src="../../images/kweek.jpg" width="412" height="384" />  <br />  <h3><a href="index.php">Back</a></h3>');
+}
+</script>
+	 
  
-	   <div id="footer"><img src="Pictures/wallpaper.jpg" width="1341" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
+	   <div ><img id="footer" src="Pictures/wallpaper.jpg" width="975" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
 
     </div>
    
