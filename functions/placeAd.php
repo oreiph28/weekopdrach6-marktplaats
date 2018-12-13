@@ -26,9 +26,9 @@ if ($conn->query($sqlCommand) === TRUE)
 {
  $last_id = $conn->insert_id;   
 
- //echo "New record created succesfully with ID: #". $last_id;
+ echo "New record created succesfully with ID: #". $last_id;
  }
   $conn->close();
- require('../users/mijnAdvertentie.php');
+
  ?>
  

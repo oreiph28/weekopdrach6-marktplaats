@@ -1,138 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="generator" content="Onelio Reiph">
     <meta name="dcterms.created" content="di, 11 dec 2018 09:10:07 GMT">
     <meta name="description" content="Virtual Market">
 
-    <link rel="stylesheet" href="paypal.css" />
-	<link rel="stylesheet" href="css/mijnadvertenties.css" />
-    <link rel="stylesheet" href="../css/navigation.css" />
+	<link rel="stylesheet" href="../login/css/login.css"/>
+	<link rel="stylesheet" href="../css/navigation.css" />
 	<link rel="stylesheet" href="../css/search.css" />
+	<link rel="stylesheet" href="css/mijnAdvertenties.css" /> 
+	<link rel="stylesheet" href="mijnadvertenties.css" />
+    <link rel="stylesheet" href="paypal.css" />
+	
 	
 <style type="text/css">
-
-body{
-background-color:#FF71C7;
- }
-   
-  .searchmenu {
-  padding:10px;
-   }
- #searchInput{
- width:250px;
-  }  
-   
-   
-.uitgelicht{
-top:185px;
-left:5px;
-position:fixed;
-padding:20px;
-background-color:#A0C3A9;
-width:180px;
-height:400px;
-border-width:4px;
-border-style:solid;
-border-color:gray;
-z-index:1;
-}
- 
-.ad_body{
-position:relative;
-left:275px;
-top:-30px;
-height:2700px;
-width:1000px;
-background-color:#A0C3A9;
-border-style:solid;
-border-width:4px;
-border-top-width:30px;
-border-color:gray;
-overflow-y:scroll;
-  }
- 
-#logo1{
-position:absolute;
-top:2px;
-left:1055px;
-}
-
-#logo2{
-float:right;
-width:485px;
-height:200px;
-background-color:black;
-border-style:solid;
-border-width:4px;
-border-color:gray;
-  }
-
-#logo3{
-width:485px;
-height:200px;
-background-color:black;
-border-style:solid;
-border-width:4px;
-border-color:gray;
-  }
- 
-form.ad_in{
- margin-left:300px;
- margin-top:10px;
- padding:10px;
- background-color:white;
- width:325px;
- border-style:solid;
- border-width:4px;
- border-color:gray;
- border-radius:25px;
-  }
- 
- 
- #usern{
- margin-top:-60px;
- margin-left:200px;
- font-size:44px;
- font-weight:bolder;
- color:#B38F2E;
-  }
- 
- #ads{
- float:left;
- border-style:solid;
- border-width:4px;
- border-color:gray;
- border-radius:25px;
- padding:10px;
- background-color:white;
- width:385px;
- margin-left:50px;
-  }
- 
-#footer{
-position:relative;
-top:5px;
-}
- 
- 
- 
- 
-
-
-
-
-
-
-
-
-
 div.paypal-button-container{
 background-color:black;
-float:left;
-margin-top:10px;
-margin-left:10px;
+
 padding:10px;
 height:110px;
 width:250px;
@@ -146,10 +32,10 @@ border-radius:25px;
 	
 <title>Mijn Advertentie</title>
 </head>
-
-
-  <body>
-<!-- =========================================================================
+  
+  
+<body>
+ 	<!-- =========================================================================
 	================================Navigation Menu===================================
 	========================================================================== -->
   <div class="menu">
@@ -172,16 +58,15 @@ border-radius:25px;
 	<br />
 	<br />
 	<br />
-  
-  
- <!-- =========================================================================
+	
+	<!-- =========================================================================
 	================================Search Menu===================================
 	========================================================================== -->
 <form class="search" action="search_bar.php">
 
-    <div class="header">
-         <div class="searchmenu">
-             <input id="searchInput" type="text" name="searchInput" placeholder="Search" required>
+<div class="header">
+ <div class="searchmenu">
+      <input id="searchInput" type="text" name="searchInput" placeholder="Search" required>
 
  <select class="searchSelect" name="searchSelect">
    <option selected value="0">All groups</option>
@@ -210,7 +95,7 @@ border-radius:25px;
    <option value="23">Muziek en Instrumenten</option>
 </select>
 
-        <input id="PosctcodeInput" type="text" name="postcodeInput" placeholder="Postal Code" required>
+      <input id="PosctcodeInput" type="text" name="postcodeInput" placeholder="Postal Code" required>
 
 <select name="afstand" class="afstand">
   <option selected value="0">All distances</option>
@@ -224,12 +109,15 @@ border-radius:25px;
 </select>
   
   <input type="button" value="Search" id="btnZoek"/>
-  
-          </div>
+  </div>
+ 
 	   <img id="logo1" src="../Pictures/logo.jpg" width="250" height="95" alt="logo" title="Virtual Market" />
-    </div>
+ </div>
 </form>
 
+
+
+
   <br />
   <br />
   <br />
@@ -237,12 +125,12 @@ border-radius:25px;
   <br />
 
   
- 
+  
   <!--   =================================================================
 =============================Uitgelicht form============================
 ==================================================================== -->
 
- 
+ <div class="body">
    
    <div class="uitgelicht"> 
 <a href="#">Antiek en Kunst</a><br />
@@ -269,40 +157,123 @@ border-radius:25px;
 <a href="#">Muziek en Instrumenten</a><br />
    </div>
 
+</div>
 
-  
-  
-
-	<!-- ========================================================================
-	================================Advertisements body Menu=====================
-	========================================================================= -->
-<div class="ad_body">  
-
-
-	<!-- =======================Advertisements Head  Menu=================== -->
- 
-       <div id="logo2">   
-	         <img  src="../Pictures/logo.jpg" width="485" height="200" alt="logo" title="Virtual Market" />
-	   </div>
+	<!-- =========================================================================
+	================================Advertisements Head  Menu===================================
+	========================================================================== -->
+<div>
+    <div id="bericht">   
+	   <img id="logo" src="../Pictures/logo.jpg" width="535" height="200" alt="logo" title="Virtual Market" />
+	</div>
 	
-	   <div id="logo3">
-	         <img src="../Pictures/user.jpg" width="485" height="200" alt="message" title="Virtual Market" />
-			 <h1 id="usern">users</h1>
-       </div>
+	<div id="bericht_l">
+	   <img src="../Pictures/user.jpg" width="430" height="200" alt="message" title="Virtual Market" />
+	   <h1 id="usern">users</h1>
+    </div>
+	   
+<!--   =================================================================
+=============================BLOG INPUT FORM============================
+==================================================================== -->
+
+    <form class="blog" id="blog_news" name="Blogform" method="post" action="../functions/placeAd.php" enctype="multipart/form-data"> 
+             <table  class="table">
+	               <tr>
+					        <td>
+					        <input type="hidden" name="size" value="1000000">
+							</td>
+  	               </tr>
+					 
+				   <tr>
+				             <td>
+							 <label>Username</label>
+							 </td>
+				             <td>
+							 <input type="text" name="name" maxlength="50" size="31" placeholder="Enter Name" required/>
+							 </td>
+				   </tr>
+	
+	               <tr>
+				             <td>
+							 <label>Group</label>
+							 </td>
+				             <td>
+							 <input type="text" name="title" maxlength="50" size="31" placeholder="Enter Title" required/>
+							 </td>
+				   </tr>
+	          
+			       <tr>
+				             <td>
+							 <label>Email</label>
+							 </td>
+				             <td>
+							 <input type="text" name="email" maxlength="50" size="31" placeholder="Enter email" required/>
+							 </td>
+				   </tr>
+	               
+				   <tr>
+				             <td id="btn">
+							 <label>Ad</label>
+							 </td>
+				           
+						     <td id="blog_b">
+							 <textarea id="text" cols="28" rows="9" name="image_text" placeholder="Place your ad here..."></textarea>
+  	                         </td>
+				   </tr>		   
+	         </table>
+			 
+			  <input id="submit" type="submit" />
+			  <br/>
+		      <input id="file" type="file" name="image"> 
+  </form>
+	   
+	   
+	   
+	     
+<!-- ===========================================================================================
+  ++++++++++++++++++++++++++++++++++++Database+++++++++++++++++++++++++++++++++++++++++++++++++
+  ========================================================================================== -->
+
+<?php	
+     $servername = "localhost";
+     $username = "oreiph";
+     $password = "1771128903";
+     $dbname = "virtual_market";
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+   if($conn->connect_errno){
+                            echo "Connection failed " . $conn->connect_error; 
+                            exit();
+                           }
+
+$sqlCommand ="SELECT * FROM advertentie ORDER BY ID DESC LIMIT 10";
+$sqlUitvoer	= mysqli_query($conn,$sqlCommand);
+
+if ($sqlUitvoer->num_rows>0){
+         while ($row = mysqli_fetch_array($sqlUitvoer)) {
+		      
+		echo "<p id='ads'>"."<img src='images/".$row['file']."' width='200' height='130'>";
+		echo "<br>"."<br>"."Advertisement #:  "."</b>".$row['id']."<br>";
+		echo "<b>"."Advertiser:  "."</b>".$row['username']."<br>";
+		echo "<b>"."Group:  "."</b>".$row['groep']."<br>";
+		echo "<b>"."Ad:  "."</b>".$row['advertentie']."<br>";
+		echo $row['file']."<br>";
+		echo "_________________________"."<br>"."</p>";
+     
+     
+    }}
+	mysqli_close($conn);
+?>  
+</div>
+   
+   
+       <div id="footer"><img src="../Pictures/wallpaper.jpg" width="1341" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
 
    
-   
-   
-   
-   
-  
-<!--   =================================================================
-=============================Paypal INPUT FORM============================
-==================================================================== -->
- 
-   
-   
-   
+<!-- =================================================================================
+===================================Paypal=============================================
+================================================================================== -->
+
 <div class="paypal-button-container"></div>
 
 <script src="https://www.paypalobjects.com/api/checkout.js"></script>
@@ -369,110 +340,21 @@ onAuthorize: function (data, actions) {
 }, 'div.paypal-button-container');
 </script>
 	
-   
-<!--   =================================================================
-=============================Advertisement INPUT FORM============================
-==================================================================== -->
-
-    <form class="ad_in" id="blog_news" name="Blogform" method="post" action="../functions/placeAd.php" enctype="multipart/form-data"> 
-             <table  class="table">
-	               <tr>
-					        <td>
-					        <input type="hidden" name="size" value="1000000">
-							</td>
-  	               </tr>
-					 
-				   <tr>
-				             <td>
-							 <label>Username</label>
-							 </td>
-				             <td>
-							 <input type="text" name="name" maxlength="50" size="31" placeholder="Enter Name" required/>
-							 </td>
-				   </tr>
+		
 	
-	               <tr>
-				             <td>
-							 <label>Group</label>
-							 </td>
-				             <td>
-							 <input type="text" name="title" maxlength="50" size="31" placeholder="Enter Title" required/>
-							 </td>
-				   </tr>
-	          
-			       <tr>
-				             <td>
-							 <label>Email</label>
-							 </td>
-				             <td>
-							 <input type="text" name="email" maxlength="50" size="31" placeholder="Enter email" required/>
-							 </td>
-				   </tr>
-	               
-				   <tr>
-				             <td id="btn">
-							 <label>Ad</label>
-							 </td>
-				           
-						     <td id="blog_b">
-							 <textarea id="text" cols="28" rows="9" name="image_text" placeholder="Place your ad here..."></textarea>
-  	                         </td>
-				   </tr>		   
-	         </table>
-			 
-			  <input id="submit" type="submit" />
-			  <br/>
-		      <input id="file" type="file" name="image"> 
-  </form>
-	   
-	   
-	        
-<!-- ===========================================================================================
-  ++++++++++++++++++++++++++++++++++++Database+++++++++++++++++++++++++++++++++++++++++++++++++
-  ========================================================================================== -->
+	
+	<!-- =========================================================================
+	================================Sripts========================================
+	========================================================================== -->
+	
+<?php
+ $name = $_POST["uname"];
+?>
+	
+<script type="text/javascript">
+var result="<?php echo $name;?>";
+document.getElementById("usern").innerHTML = result;
+</script>
 
-<?php	
-     $servername = "localhost";
-     $username = "oreiph";
-     $password = "1771128903";
-     $dbname = "virtual_market";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-   if($conn->connect_errno){
-                            echo "Connection failed " . $conn->connect_error; 
-                            exit();
-                           }
-
-$sqlCommand ="SELECT * FROM advertentie ORDER BY ID DESC LIMIT 10";
-$sqlUitvoer	= mysqli_query($conn,$sqlCommand);
-
-if ($sqlUitvoer->num_rows>0){
-         while ($row = mysqli_fetch_array($sqlUitvoer)) {
-		      
-		echo "<p id='ads'>"."<img src='images/".$row['file']."' width='200' height='130'>";
-		echo "<br>"."<br>"."Advertisement #:  "."</b>".$row['id']."<br>";
-		echo "<b>"."Advertiser:  "."</b>".$row['username']."<br>";
-		echo "<b>"."Group:  "."</b>".$row['groep']."<br>";
-		echo "<b>"."Ad:  "."</b>".$row['advertentie']."<br>";
-		echo $row['file']."<br>";
-		echo "_________________________"."<br>"."</p>";
-     
-     
-    }}
-	mysqli_close($conn);
-?>  
-
-
-
-
-
-
-
-
-</div>
- 
-<div id="footer"><img src="../Pictures/wallpaper.jpg" width="1341" height="507" alt="Virtua lMarket" title="Virtual Market" /></div> 
-
- 
-</body>
+  </body>
 </html>

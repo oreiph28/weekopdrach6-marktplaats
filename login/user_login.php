@@ -29,7 +29,7 @@ $count = mysqli_num_rows($result);
 
 if ($count == 1){
 //echo "loggedin";
-              require('../users/mijnAdvertentie.php');
+              require('../users/mijnadvertentie.php');
                  }
 	else
 	    {

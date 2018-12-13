@@ -1,0 +1,106 @@
+body{
+background-color:#FF71C7;
+ }
+   
+.uitgelicht{
+top:185px;
+left:5px;
+position:fixed;
+padding:20px;
+background-color:#A0C3A9;
+width:180px;
+height:400px;
+border-width:4px;
+border-style:solid;
+border-color:gray;
+z-index:1;
+}
+ 
+.ad_body{
+position:relative;
+left:275px;
+top:-30px;
+height:2700px;
+width:1000px;
+background-color:#A0C3A9;
+border-style:solid;
+border-width:4px;
+border-top-width:30px;
+border-color:gray;
+overflow-y:scroll;
+  }
+ 
+#logo1{
+position:absolute;
+top:2px;
+left:1055px;
+}
+
+#logo2{
+float:right;
+width:485px;
+height:200px;
+background-color:black;
+border-style:solid;
+border-width:4px;
+border-color:gray;
+  }
+
+#logo3{
+width:485px;
+height:200px;
+background-color:black;
+border-style:solid;
+border-width:4px;
+border-color:gray;
+  }
+ 
+form.ad_in{
+ margin-left:300px;
+ margin-top:10px;
+ padding:10px;
+ background-color:white;
+ width:325px;
+ border-style:solid;
+ border-width:4px;
+ border-color:gray;
+ border-radius:25px;
+  }
+ 
+ 
+ #usern{
+ margin-top:-60px;
+ margin-left:200px;
+ font-size:44px;
+ font-weight:bolder;
+ color:#B38F2E;
+  }
+ 
+ #ads{
+ border-style:solid;
+ border-width:4px;
+ border-color:gray;
+ border-radius:25px;
+ padding:10px;
+ background-color:white;
+ width:300px;
+  }
+ 
+#footer{
+position:relative;
+top:5px;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
