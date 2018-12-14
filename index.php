@@ -12,11 +12,25 @@
 	<link rel="stylesheet" href="css/navigation.css" />
 	<link rel="stylesheet" href="css/search.css" />
     <link rel="stylesheet" href="../Virtual_Market/users/css/mijnAdevertenties.css" />
+	
 	<title>Virtual Market</title>
 	
 	
   </head>
   <style>
+  
+  #textHint{
+  padding:8px;
+  margin-left:50px;
+  background-color:white;
+  border-style:solid;
+  border-color:gray;
+  border-width:4px;
+  width:200px;
+ float:left;
+   }
+  
+  
 table,th,td {
   border : 1px solid black;
   border-collapse: collapse;
@@ -64,10 +78,10 @@ th,td {
 	  <form action="">
  <select class="searchSelect" name="searchSelect" onchange="showCustomer(this.value)">
    <option selected value="51">All groups</option>
-   <option value="52">Antiek en Kunst</option>
-   <option value="53">Adio, TV, Foto's</option>
-   <option value="54">Auto's</option>
-   <option value="55">auto-onderdelen</option>
+   <option value="o.e REIPH">name</option>
+   <option value="auto">Auto</option>
+   <option value="books">Books</option>
+   <option value="tv">TV</option>
    <option value="56">auto-diversen</option>
    <option value="57">Boeken</option>
    <option value="58">Caravans en Kamperen</option>
@@ -120,29 +134,29 @@ th,td {
  <div class="body">
    
    <div class="uitgelicht"> 
-<a href="#">Antiek en Kunst</a><br />
-<a href="#">Adio, TV, Foto's</a><br />
-<a href="#">Auto's</a><br />
-<a href="#">auto-onderdelen</a><br />
-<a href="#">auto-diversen</a><br />
-<a href="#">Boeken</a><br />
-<a href="#">Caravans en Kamperen</a><br />
-<a href="#">Cd's en Dvd'S</a><br />
-<a href="#">Computers en Software</a><br />
-<a href="#">Contacten en Berichten</a><br />
-<a href="#">Diensten en Vakmensen</a><br />
-<a href="#">Dieren en Toebehoren</a><br />
-<a href="#">Doe-Het-Zelfen Verbouw</a><br />
-<a href="#">Fietsen en Brommers</a><br />
-<a href="#">Huis en Inrichting</a><br />
-<a href="#">Antiek</a><br />
-<a href="#">Huizen en Kamers</a><br />
-<a href="#">Kinderen en Baby's</a><br />
-<a href="#">Kleding Dames</a><br />
-<a href="#">Kleding Heren</a><br />
-<a href="#">Motoren</a><br />
-<a href="#">Muziek en Instrumenten</a><br />
-</div>
+      <a href="#">Antiek en Kunst</a><br />
+      <a href="#">Adio, TV, Foto's</a><br />
+      <a href="#">Auto's</a><br />
+      <a href="#">auto-onderdelen</a><br />
+      <a href="#">auto-diversen</a><br />
+      <a href="#">Boeken</a><br />
+      <a href="#">Caravans en Kamperen</a><br />
+      <a href="#">Cd's en Dvd'S</a><br />
+      <a href="#">Computers en Software</a><br />
+      <a href="#">Contacten en Berichten</a><br />
+      <a href="#">Diensten en Vakmensen</a><br />
+      <a href="#">Dieren en Toebehoren</a><br />
+      <a href="#">Doe-Het-Zelfen Verbouw</a><br />
+      <a href="#">Fietsen en Brommers</a><br />
+      <a href="#">Huis en Inrichting</a><br />
+      <a href="#">Antiek</a><br />
+      <a href="#">Huizen en Kamers</a><br />
+      <a href="#">Kinderen en Baby's</a><br />
+      <a href="#">Kleding Dames</a><br />
+      <a href="#">Kleding Heren</a><br />
+      <a href="#">Motoren</a><br />
+      <a href="#">Muziek en Instrumenten</a><br />
+	</div>
 <br />
 
    <div id="bericht">   
@@ -151,21 +165,22 @@ th,td {
 	   <img src="Pictures/advertisements.jpg" width="430" height="200" alt="message" title="Virtual Market" />
 	   </div>
 	  
-	  
-	  
+
 	  <!-- ===========================================================================================
   +++++++++++++++++++++++++++++++++++AJAX++++++++++++++++=++++++++++++++++++++++++++
   ============================================================================================= -->
 	  
-	  <div id="txtHint">Customer info will be listed here...</div>
+	  <div id="txtHint"></div>
 
 <script>
 function showCustomer(str) {
   var xhttp;    
   if (str == "") {
-    document.getElementById("txtHint").innerHTML = "";
+    document.getElementById("ads").innerHTML = "";
     return;
   }
+var x = document.getElementById("ads");
+x.remove(x.selectedIndex)
   xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -177,7 +192,7 @@ function showCustomer(str) {
 }
 </script>
 
-	  
+	 
 	  
 	  
 <!-- ===========================================================================================
@@ -199,7 +214,7 @@ $conn = mysqli_connect($servername, $username, $password, $dbname);
 $sqlCommand ="SELECT * FROM advertentie ORDER BY ID DESC LIMIT 100";
 $sqlUitvoer	= mysqli_query($conn,$sqlCommand);
 
-if ($sqlUitvoer->num_rows>0){
+if ($sqlUitvoer->num_rows>0) {
          while ($row = mysqli_fetch_array($sqlUitvoer)) {
 		      
 		echo "<p id='ads'>"."<img id='img1' src='images/".$row['file']."' width='200' height='130' onclick='myFunction()'>";
