@@ -13,9 +13,21 @@
 	<link rel="stylesheet" href="css/search.css" />
     <link rel="stylesheet" href="../Virtual_Market/users/css/mijnAdevertenties.css" />
 	<title>Virtual Market</title>
+	
+	
   </head>
-  
+  <style>
+table,th,td {
+  border : 1px solid black;
+  border-collapse: collapse;
+}
+th,td {
+  padding: 5px;
+}
+</style>
   <body>
+ 
+ 
  
   <div class="menu">
 
@@ -49,32 +61,36 @@
  <div class="searchmenu">
       <input id="searchInput" type="text" name="searchInput" placeholder="Search" required>
 
- <select class="searchSelect" name="searchSelect">
-   <option selected value="1">All groups</option>
-   <option value="2">Antiek en Kunst</option>
-   <option value="2">Adio, TV, Foto's</option>
-   <option value="2">Auto's</option>
-   <option value="3">auto-onderdelen</option>
-   <option value="2">auto-diversen</option>
-   <option value="4">Boeken</option>
-   <option value="2">Caravans en Kamperen</option>
-   <option value="5">Cd's en Dvd'S</option>
-   <option value="2">Computers en Software</option>
-   <option value="6">Contacten en Berichten</option>
-   <option value="2">Diensten en Vakmensen</option>
-   <option value="7">Dieren en Toebehoren</option>
-   <option value="2">Doe-Het-Zelfen Verbouw</option>
-   <option value="8">Fietsen en Brommers</option>
-   <option value="2">Hobby en Vrije tijd</option>
-   <option value="9">Huis en Inrichting</option>
-   <option value="2">Antiek</option>
-   <option value="10">Huizen en Kamers</option>
-   <option value="2">Kinderen en Baby's</option>
-   <option value="11">Kleding Dames</option>
-   <option value="2">Kleding Heren</option>
-   <option value="12">Motoren</option>
-   <option value="13">Muziek en Instrumenten</option>
+	  <form action="">
+ <select class="searchSelect" name="searchSelect" onchange="showCustomer(this.value)">
+   <option selected value="51">All groups</option>
+   <option value="52">Antiek en Kunst</option>
+   <option value="53">Adio, TV, Foto's</option>
+   <option value="54">Auto's</option>
+   <option value="55">auto-onderdelen</option>
+   <option value="56">auto-diversen</option>
+   <option value="57">Boeken</option>
+   <option value="58">Caravans en Kamperen</option>
+   <option value="59">Cd's en Dvd'S</option>
+   <option value="60">Computers en Software</option>
+   <option value="61">Contacten en Berichten</option>
+   <option value="62">Diensten en Vakmensen</option>
+   <option value="63">Dieren en Toebehoren</option>
+   <option value="62">Doe-Het-Zelfen Verbouw</option>
+   <option value="65">Fietsen en Brommers</option>
+   <option value="66">Hobby en Vrije tijd</option>
+   <option value="67">Huis en Inrichting</option>
+   <option value="68">Antiek</option>
+   <option value="69">Huizen en Kamers</option>
+   <option value="70">Kinderen en Baby's</option>
+   <option value="71">Kleding Dames</option>
+   <option value="72">Kleding Heren</option>
+   <option value="73">Motoren</option>
+   <option value="74">Muziek en Instrumenten</option>
 </select>
+</form>
+
+
 
 <input id="PosctcodeInput" type="text" name="searchInput" placeholder="Postal Code" required>
 
@@ -135,8 +151,37 @@
 	   <img src="Pictures/advertisements.jpg" width="430" height="200" alt="message" title="Virtual Market" />
 	   </div>
 	  
+	  
+	  
+	  <!-- ===========================================================================================
+  +++++++++++++++++++++++++++++++++++AJAX++++++++++++++++=++++++++++++++++++++++++++
+  ============================================================================================= -->
+	  
+	  <div id="txtHint">Customer info will be listed here...</div>
+
+<script>
+function showCustomer(str) {
+  var xhttp;    
+  if (str == "") {
+    document.getElementById("txtHint").innerHTML = "";
+    return;
+  }
+  xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("txtHint").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "placeAd.php?q="+str, true);
+  xhttp.send();
+}
+</script>
+
+	  
+	  
+	  
 <!-- ===========================================================================================
-  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  +++++++++++++++++++++++++++++++++++Calling database++++++++++++++++=++++++++++++++++++++++++++
   ============================================================================================= -->
 
    <?php	
